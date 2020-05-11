@@ -16,409 +16,393 @@
 
 # Locale.
 
-en:
+es_MX:
   activerecord:
     attributes:
       user:
-        accepted_terms: "Terms and Conditions"
-        email: Email
-        name: Name
-        password: Password
-        password_confirmation: Password Confirmation
+        accepted_terms: "Términos y condiciones"
+        email: Cuenta de correo
+        name: Nombre
+        password: Contraseña
+        password_confirmation: Confirmación de contraseña
     errors:
       models:
         user:
-          confirmation: doesn't match Password
+          confirmation: Contraseña no coincide
   administrator:
     site_settings:
       authentication:
-        disabled: Disabled
-        enabled: Enabled
-        info: Only allow authenticated users to join a room
-        title: Require Authentication for Rooms
-        user-info: You must sign in to Greenlight to join this room
+        disabled: Deshabilitada
+        enabled: Habilitada
+        info: Permitir solo a usuarios autenticados ingresar a una sala
+        title: Requerir autenticación para hacer uso de salas
+        user-info: Debes iniciar sesión para ingresar a esta sala
       branding:
-        change: Change Image
-        info: Change the branding image that appears in the top left corner
-        placeholder: Image Url...
-        title: Branding Image
-        invalid: Invalid URL
+        change: Cambiar imagen
+        info: Cambiar la imagen personalizada que aparece en la esquina superior izquierda
+        placeholder: Enlace de la imagen...
+        title: Imagen personalizada
+        invalid: URL invalida
       cache:
-        info: Clears the stored provider cache which forces a new request for the updated info
-        title: Clear Provider Cache
-        button: Clear Cache
+        info: Limpia el proveedor almacenado en cache lo cual forza todas la actualización de las peticiones nuevas
+        title: Limpiar cache de proveedor
+        button: Limpiar cache
       clear_auth:
-        info: Clears the current authenticator for users allowing them to sign back in using a different authentication method
-        title: Clear Current Authenticator
-        button: Clear Auth
+        info: "Limpia el autentificador actual para los usuarios, permitiendoles ingresar nuevamente utilizando un metodo de autentificación distinto"
+        title: Limpiar el autentificador actual
+        button: Limpiar autentificación
       color:
-        info: Changing the Regular Color will change both Lighten and Darken. Lighten and Darken can then be changed individually
-        title: Primary Color
+        info: Cambiar el color regular cambiará tanto el color claro como obscuro. Los valores de Aclarar y Oscurecer se pueden cambiar individualmente
+        title: Color principal
         regular: Regular
-        lighten: Lighten
-        darken: Darken
+        lighten: Aclarar
+        darken: Oscurecer
       log_level:
-        title: Log Level
-        information: Change the Log Level for the entire deployment
-        debug: Debug
-        info: Info
-        warn: Warn
+        title: Nivel de mensajes
+        information: Cambiar el nivel de mensajes del servidor
+        debug: Depuración
+        info: Información
+        warn: Advertencia
         error: Error
         fatal: Fatal
-        unknown: Unknown
+        unknown: Desconocido
       recording_visibility:
-        info: Set the default recording visbility for new recordings
-        title: Recording Default Visibility
-        warning: This setting will only be applied to rooms that aren't running
+        info: Establecer la visibilidad por omisión en las grabaciones nuevas
+        title: Visibilidad de grabación por omisión
+        warning: Esta configuración solo será aplicada a las nuevas sesiones
       registration:
-        info: Change the way that users register to the website
-        title: Registration Method
+        info: Cambiar la forma de registro de usuarios
+        title: Método de registro
         methods:
-          approval: Approve/Decline
-          invite: Join by Invitation
-          open: Open Registration
+          approval: Autorizar/Denegar
+          invite: Registro por invitación
+          open: Registro abierto
       rooms:
-        info: Limits the number of rooms that a user can have (including Home Room). This setting does not apply to administrators.
-        title: Number of Rooms per User
+        info: Establece el límite de salas que un usuario puede tener (incluyendo la sala principal). Esta configuración no aplica para administradores.
+        title: Número de salas por usuario
       shared_access:
-        info: Setting to disabled will remove the button from the Room options dropdown, preventing users from sharing rooms
-        title: Allow Users to Share Rooms
-      subtitle: Customize Greenlight
-      title: Site Settings
+        info: "Al deshabilitar esta opción se eliminara el botón de la lista de opciones para la sala, con lo cual los usuarios no podrán compartir salas"
+        title: Permitir a los usuarios compartir salas
+      subtitle: Personalizar Servivox Meet
+      title: Configuración del sitio web
     flash:
-      approved: User has been successfully approved.
-      banned: User has been successfully banned.
-      unbanned: User has been successfully unbanned.
-      delete: User deleted successfully
-      delete_fail: Failed to delete user
-      demoted: User has been successfully demoted
-      invite: Invite successfully sent to %{email}
-      invite_email_verification: Emails must be enabled in order to use this method. Please contact your system administrator.
-      merge_fail: There was an issue merging the user accounts. Please check the users selected and try again 
-      merge_success: User accounts merged successfully
-      perm_deleted: User has been permanently deleted
-      promoted: User has been successfully promoted
-      registration_method_updated: Registration method successfully updated
-      reset_password: The user has been sent an email to reset their password. (Please ask them to check their spam folder if they haven't received it)
-      restored: User has been successfully restored
-      room_configuration: Room Configuration successfully changed
-      settings: Site Settings successfully changed
-      unauthorized: You are not authorized to perform actions on this user
+      approved: El usuario ha sido autorizado
+      banned: El usuario ha sido bloqueado.
+      unbanned: El usuario ha sido desbloqueado.
+      delete: El usuario ha sido eliminado.
+      delete_fail: El usuario no pudo ser eliminado.
+      demoted: El usuario ha sido degradado.
+      invite: "Invitación enviada exitosamente a %{email}"
+      invite_email_verification: El envío de emails debe estar habilitado para poder hacer uso de este método de registro. Contacta al administrador del sistema
+      merge_fail: Ocurrió un error al combinar las cuentas de usuario. Por favor revisa los usuarios seleccionados e intentalo de nuevo 
+      merge_success: Cuentas de usuario combinadas exitosamente
+      perm_deleted: El usuario ha sido eliminado permanentemente.
+      promoted: El usuario ha sido promovido.
+      registration_method_updated: Método de registro actualizado
+      reset_password: Se ha envido al usuario un mensaje de correo para recuperar la contraseña. (Pídele revisar su carpeta de Spam sí no lo ha recibido)
+      restored: El usuario ha sido recuperado.
+      settings: La configuración de sistema ha sido actualizada
+      unauthorized: No estas autorizado para ejecutar operaciones en este usuario.
     recordings:
-      title: Server Recordings
-      no_recordings: This server has no recordings.
+      title: Grabaciones
+      no_recordings: Este servidor no tiene grabaciones.
     roles:
-      appear_in_share_list: Include users with this role in the dropdown for sharing rooms
-      can_create_rooms: Can create rooms
-      delete: Delete the role
-      invalid_create: There was a problem creating a new role. Please check the role values and try again
-      invalid_order: There was a problem updating the priority of the role. Please check the values and try again
-      invalid_update: There was a problem updating the permissions of the role. Please check the values and try again
-      manage_rooms_recordings: Allow users with this role to manage server rooms and recordings
-      name: Role Name
-      new_role: Create a new role
-      role_has_users: This role is assigned to %{user_count} accounts. Please remove all accounts from this role before deleting it.
+      appear_in_share_list: Incluir usuarios con este rol en la lista de selección para compartir salas
+      can_create_rooms: Puede crear salas
+      delete: Eliminar rol
+      invalid_create: Ocurrió un error al crear un nuevo rol. Verifica su valor e intentalo de nuevo.
+      invalid_order: Ocurrió un error al actualizar la prioridad del rol. Verifica su valor e intentalo de nuevo.
+      invalid_update: Ocurrió un error al cambiar los permisos del rol. Verifica su valor e intentalo de nuevo.
+      manage_rooms_recordings: Permitir a los usuarios con este rol administrar salas y grabaciones en el servidor
+      name: Nombre de rol
+      new_role: Crear un rol nuevo
+      role_has_users: "Este rol se encuentra asignado a %{user_count}cuentas de usuario. Debes remover todas las cuentas asociadas a este rol antes de eliminarlo."
       title: Roles
-      promote_email: Send an email to users when they are assigned this role
-      demote_email: Send an email to users when they are removed from this role
-      edit_site_settings: Allow users with this role to edit site settings
-      edit_roles: Allow users with this role to edit other roles
-      manage_users: Allow users with this role to manage users
-      invalid_assignment: There was a problem assigning the roles to the user. Please check the values and try again 
+      promote_email: "Enviar un mensaje a los usuarios que hayan sido asignados con este rol "
+      demote_email: "Enviar un mensaje a los usuarios que hayan sido removidos de este rol "
+      edit_site_settings: Permitir a los usuarios con este rol editar configuraciones
+      edit_roles: Permitir a los usuarios con este rol editar otros roles
+      manage_users: Permitir a los usuarios con este rol manejar otros usuarios
+      invalid_assignment: Ocurrió un error al asignar el rol al usuario. Verifica su valor e intentalo de nuevo. 
       colour:
-        title: Role Colour
-        info: Set the colour that will be associated with the role
-    room_configuration:
-      title: Room Configuration
-      mute:
-        info: Automatically mutes the user when they join the BigBlueButton meeting
-      require_moderator:
-        info: Prompts the moderator of the BigBlueButton meeting when a user tries to join. If the user is approved, they will be able to join the meeting.
-      allow_any:
-        info: Allows any user to start the meeting at any time. By default, only the room owner can start the meeting.
-      all_moderator:
-        info: Gives all users moderator privileges in BigBlueButton when they join the meeting.
-      options:
-        disabled: Disabled
-        enabled: Always Enabled
-        optional: Optional
+        title: Color de rol
+        info: Define el color que sera asociado con el rol
     rooms:
-      title: Server Rooms
+      title: Salas en el servidor
       table:
         id: ID
-        not_running: Not Running
-        running: Running
-        status: Status
-        view: View
-    title: Organization Settings
+        not_running: No en marcha
+        running: En marcha
+        status: Estado
+        view: Vista
+    title: Configuración de organización
     users:
-      invite: Invite User
+      invite: Invitar usuario
       edit:
-        title: Edit User Details
+        title: Editar detalles de usuario
       settings:
-        approve: Approve
-        decline: Decline
-        ban: Ban User
-        delete: Delete
-        edit: Edit
-        edit_roles: Edit the user roles
-        merge: Merge
-        perm_delete: Permanently Delete
-        unban: Unban User
-        undelete: Undelete
+        approve: Autorizar
+        decline: Denegar
+        ban: Bloquear usuario
+        delete: Eliminar
+        edit: Editar
+        edit_roles: Editar los roles de usuario
+        merge: Combinar
+        perm_delete: Eliminar permanentemente
+        unban: Desbloquear usuario
+        undelete: Recuperar
       table:
-        authenticator: Authenticator
-        created: Created
-        name: Name
-        not_found: No users match your search
-        no_users: No users found
-        role: Role
-        uid: User ID
-        username: Username
-      title: Manage Users
-  add_to_google_calendar: "Add to Google Calendar"
-  bigbluebutton: BigBlueButton
-  bigbluebutton_exception: Oops, there was an error when starting the meeting!
-  cancel: Cancel
+        authenticator: Autenificador
+        created: Creado
+        name: Nombre
+        not_found: No se encontraron usuarios con ese criterio
+        no_users: No se encontraron usuarios
+        role: Rol
+        uid: Identificador de usuario
+        username: Nombre de usuario
+      title: Administrar usuarios
+  add_to_google_calendar: "Agregar a calendario de Google"
+  bigbluebutton: Servivox Meet
+  bigbluebutton_exception: Oh no! Ocurrió un error al iniciar la sesión.
+  cancel: Cancelar
   cookies:
-    cookie_info: Cookies help us deliver our services. By using our services, you agree to our use of cookies.
-    cookie_button: I Agree
-  copied: Copied
-  copy: Copy
+    cookie_info: "Las cookies nos ayudan a proveer nuestros servicios. Al utilizar nuestros servicios, usted acepta nuestro uso de cookies."
+    cookie_button: Acepto
+  copied: Copiada
+  copy: Copiar
   date:
-    month_names: [~, January, February, March, April, May, June, July, August, September, October, November, December]
-  default_admin: You are still using the default password for this account. Please click <a href="%{edit_link}">here</a> to change it
-  delete: Delete
-  delivery_error: An error occured during email delivery. Please contact an administrator!
-  docs: Documentation
-  email: Email
-  email_sent: Your %{email_type} email has been sent! (Please check your Spam folder if you haven't received it)
-  enter_your_name: Enter your name!
+    month_names: [~, Enero, Febrero, Marzo, Abril, Mayo, Junio, Julio, Agosto, Septiembre, Octubre, Noviembre, Diciembre]
+  default_admin: "Estas usilizando la contraseña por omisión para esta cuenta de usuario. Haz click <a href=\"%{edit_link}\">aquí </a> para cambiarla"
+  delete: Eliminar
+  delivery_error: Ocurrió un error durante el envío de correo electrónico. Por favor contacte un administrador.
+  docs: Documentación
+  email: Cuenta de correo
+  email_sent: "Tu email de %{email_type} ha sido enviado. (Revisa tu carpeta de Spam sí no lo has recibido)"
+  enter_your_name: Introduce tu nombre
   errors:
     bigbluebutton:
-      help: Please make sure the proper steps have been taken. <a href="%{doc_link}">Learn more</a>
-      message: Invalid BigBlueButton Endpoint and Secret
-      title: Server Error
+      help: "Asegurate de que los pasos han sido seguidos correctamente. <a href=\"%{doc_link}\">Aprender más</a>"
+      message: La URL o clave secreta del servidor Servivox Meet son inválidos
+      title: Error del servidor
     internal:
-      message: Looks like something went wrong on our end.
-      help: The error has been logged, we'll take a look!
-      report: Report Issue
+      message: Parece que algo salió mal de nuestro lado.
+      help: "El error ha sido registrado, vamos a revisarlo."
+      report: Reportar problema
     maintenance:
-      message: Sorry, we're down for maintenance.
-      help: We'll be back soon!
+      message: El sistema se encuentra en mantenimiento.
+      help: Estaremos de regreso muy pronto.
     migration_error:
-      contact_admin: If you are not an administrator, please contact one.
-      continue: I'd like to stay using 1.0.
+      contact_admin: "Sí no eres administrador, contacta a uno."
+      continue: Me gustaría seguir utilizando la versión 1.0
       notice: >
-        Greenlight encountered a database migration error.<br>
-        This may be because you haven't updated to Greenlight 2.0.
-      upgrade: Show me how to upgrade to 2.0!
-      version: We've released a new version of Greenlight, but your database isn't compatible.
+        Servivox Meet encontro un error al migrar la base de datos. <br>Esto puede deberse a que no hás actualizado a Servivox Meet versión 2.0
+      upgrade: Muestrame como actualizar a la verisión 2.0
+      version: Hemos publicado una nueva version de Servivox Meet pero tu base de datos no es compatible.
     messages:
-      blank: can't be blank
-      too_short: is too short
-      invalid: is invalid
-      taken: has already been taken
-      accepted: must be accepted
-      confirmation: doesn't match %{attribute}
-      inclusion: is not included in the list
+      blank: el valor no puede estar vacío
+      too_short: es demasiado corta
+      invalid: es invalida
+      taken: ya existe
+      accepted: debe ser aceptado
+      confirmation: "no conicide %{attribute}"
+      inclusion: no está incluido en la lista
     no_provider:
-      message: The site you are trying to access is not enabled
-      help: Please contact your system administrator to setup Greenlight
+      message: El sitio al cual estas intentando acceder no se encuentra activo
+      help: Contacta al administrador del sistema para configurar Servivox Meet.
     not_found:
-      message: Sorry! The page you are looking for does not exist.
-      help: Is it possible its been removed?
+      message: "Lo sentimos, la página que estas buscando no existe."
+      help: "¿Puede ser que haya sido eliminada?"
       user_not_found:
-        help: Please contact an administrator.
-        message: Sorry, this user is not registered.
+        help: Por favor contacta al administrador.
+        message: "Lo sentimos, este usuario no se encuentra registrado."
       user_missing:
-        help: Please verify the URL and try again
-        message: The URL that you have entered is not valid.
-    title: Errors
+        help: Por favor verifica la URL e inténtalo de nuevo.
+        message: La URL que has introducido no es valida.
+    title: Errores
     unauthorized:
-      message: You do not have access to this application
-      help: If you believe this is a mistake, please contact your system administrator.
-  expired_reset_token: Password reset link has expired!
+      message: No tienes acceso a ésta aplicación
+      help: "Sí tu crees que este es un error, contacta al administrador del sistema"
+  expired_reset_token: El enlace para reiniciar la contraseña ha expirado
   features:
-    title: Features
-    rooms: Personalized Rooms
-    recordings: Recording Management
-    designs: Custom Designs
-    authentication: User Authentication
+    title: Funciones
+    rooms: Salas personalizadas
+    recordings: Administración de grabaciones
+    designs: Diseño personalizado
+    authentication: Autentificación de usuario
   footer:
-    powered_by: Powered by %{href}.
+    powered_by: "Funciona con %{href}"
   forgot_password:
-    subtitle: Forgot Password
-    email: Email
-    submit: Submit
-  go_back: Go back
-  greenlight: Greenlight
+    subtitle: Olvidé la contraseña
+    email: Cuenta de correo
+    submit: Enviar
+  go_back: Atrás
+  greenlight: Servivox Meet
   header:
-    all_recordings: All Recordings
+    all_recordings: Todas las grabaciones
     dropdown:
-      account_settings: Organization
-      help: Need help?
-      home: Home
-      settings: Profile
-      signout: Sign out
-  home_room: Home Room
-  info_update_success: Information successfully updated.
-  invalid_credentials: The email and password you entered did not match our records. Try again or click Forgot Password to reset your password.
-  invalid_login_method: Login failed due to account mismatch. You need to log in with omniauth.
-  invite_message: "To invite someone to the meeting, send them this link:"
+      account_settings: Organización
+      help: "¿Necesitas ayuda?"
+      home: Inicio
+      settings: Perfil de usuario
+      signout: Salir
+  home_room: Sala principal
+  info_update_success: La información ha sido actualizada exitosamente
+  invalid_credentials: El correo electrónico y contraseña introducidas no coincide con los registros. Inténtalo de nuevo o haz click en recuperar contraseña.
+  invalid_login_method: El inicio de sesión falló debido a la falta de coincidencia de cuenta. Necesitas iniciar sesión con uno de los proveedores.
+  invite_message: "Para invitar a alquien a la sesión, enviale este enlace:"
   javascript:
     room:
       mailer:
-        subject: 'has invited you to view a recording.'
-        body: 'To view the recording, follow the link below:'
-        autogenerated: 'This e-mail is auto-generated by BigBlueButton.'
-        footer: 'BigBlueButton is an open source web conferencing system. For more information on BigBlueButton, see https://bigbluebutton.org/.'
+        subject: 'te ha invitado a ver una grabación'
+        body: 'Sigue el enlace para ver la grabación'
+        autogenerated: 'Este correo electrónico es generado automáticamente por Servivox Meet'
+        footer: 'Servivox Meet está personalizado sobre un sistema de código abierto para video conferencia basado en web. Para mayor información visita https://servionline.net/.'
     search:
-      start: Start searching...
+      start: Iniciar busqueda...
   landing:
-    about: "%{href} is a simple front-end for your BigBlueButton open-source web conferencing server. You can create your own rooms to host sessions, or join others using a short and convenient link."
-    welcome: Welcome to BigBlueButton.
-    video: Watch our tutorial on using Greenlight
-    upgrade: Show me how to upgrade to 2.0!
-    version: We've released a new version of Greenlight, but your database isn't compatible.
-  language_default: Default (browser language)
-  ldap_error: Unable to connect to the LDAP server. Please check your LDAP configuration in the env file and ensure your server is running.
-  login: Sign in
-  login_title: Sign in to your account
+    about: "Servivox Meet ofrece un Servicio de Salas de Videoconferencia Seguras que incluyen Herramientas de Interacción y Colaboración de los participantes. Puedes crear tus propias salas y ser anfitrión de sesiones o ingresar a las de otros utilizando un navegador web en cualquier dispositivo conectado a Internet."
+    welcome: <span class="green-grad">SerVIVox Meet</span>.
+    video: Ve nuestro tutorial de como utilizar Servivox Meet
+    upgrade: Muestrame como actualizar a versión 2.0
+    version: Hemos publicado una nueva version de Servivox Meet pero tu base de datos no es compatible.
+  language_default: Por omisión (idioma del navegador)
+  ldap_error: No se puede conectar al servidor LDAP. Compruebe la configuración de LDAP en el archivo "env" y asegúrate de que tu servidor está ejecutándose.
+  login: Ingresar
+  login_title: Ingresar a tu cuenta
   mailer:
     user:
       approve:
-        info: Your account has been approved.
-        signin: To access your personal rooms, click the button below and sign in.
-        signin_link: Sign In
+        info: Tu cuenta ha sido autorizada.
+        signin: "Para acceder tus salas personales, haz click en el botón de abajo e inicia sesión."
+        signin_link: Iniciar sesión
         signup:
-          info: A new user has signed up to use Greenlight.
-          more-info: To allow this user to access Greenlight you must approve their account in organization settings.
-          admins_link: Visit the Organization Page
-          subject: New Greenlight User Sign Up
-          username: The user signed up with the name %{name} and the email %{email}.
-        subject: Account Approved
-        username: Your username is %{email}.
+          info: Se ha registrado un usuario nuevo.
+          more-info: Para permitir el acceso de este usuario debes aprobar su cuenta de usuario a través de la configuración de la organización.
+          admins_link: Ir a la página de la organización
+          subject: Registro de usuario nuevo
+          username: "El usuario se ha registrado como %{name}con el email %{email}."
+        subject: Cuenta de usuario autorizada
+        username: "Tu nombre de usuario es %{email}."
       demoted:
-        info: You are no longer an %{role} on %{url}.
-        more-info: You now have the same privileges as a regular user.
-        root_link: Sign In
-        subtitle: "%{role} Rights Rescinded"
+        info: "Ya no eres %{role} en %{url}."
+        more-info: Desde este momento tienes los mismos privilegios que un usuario regular.
+        root_link: Iniciar sesión
+        subtitle: "Permiso de %{role} eliminado"
       invite:
-        info: You have been invited to your own personal space by %{name}
-        signup_info: To signup using your email, click the button below and follow the steps.
-        signup_link: Sign Up
+        info: "Hás sido invitado a contar con tu espacio personal por %{name}"
+        signup_info: "Para registrarte utilizando tu cuenta de correo, haz click en el botón de abajo y sigue los pasos que se indican."
+        signup_link: Registrarse
         signup:
-          info: A user that was invited has signed up to use Greenlight.
-          admins_link: Visit the Organization Page
-          subject: New Greenlight User Sign Up
-          username: The user signed up with the name %{name} and the email %{email}.
-        subject: Invitation to join BigBlueButton
-        username: Your username is %{email}.
+          info: Un usuario que fue invitado a registrarse ha completado su registro.
+          admins_link: Ir a la página de la organización
+          subject: Registro de usuario nuevo
+          username: "El usuario se ha registrado como%{name} con el email %{email}. "
+        subject: Invitación a ingresar a Servivox Meet
+        username: "Tu nombre de usuario es %{email}."
       password_reset:
-        title: 'Password reset'
-        welcome: A password reset has been requested for the email <b>%{email}</b>
-        message: 'If you requested this reset, then please click the link below to reset your password:'
-        reset_link: Reset Password
-        expire: This link will expire in two hours.
-        ignore: You can safely ignore this email if you did not make this request.
+        title: 'La contraseña ha sido reiniciada'
+        welcome: "Se ha solicitado un cambio de contraseña para el correo electrónico <b>%{email}</b>"
+        message: 'Sí hiciste una solicitud para reiniciar tu contraseña, haz click en este enlace para iniciar el proceso.'
+        reset_link: Reiniciar la contraseña
+        expire: Este enlace expira en dos horas
+        ignore: Puedes ignorar este mensaje sin preocupaciones sí no haz sido tu quien solicito el cambio de contraseña.
       promoted:
-        admins_link: Visit the Organization Page
-        info: You are now an %{role} on %{url}.
-        more-info: To view your new abilities please visit %{url}.
-        subtitle: "%{role} Rights Granted"
+        admins_link: Ir a la página de la organización
+        info: "Tu rol ha cambiado a %{role} en %{url}."
+        more-info: "Para ver las nuevas funciones que te fueron activadas visita %{url}"
+        subtitle: "Permisos de %{role} asignados"
       verify_email:
-        welcome: Welcome to your personal space, %{name}!
-        success: Leveraging %{bigbluebutton}, you can create your own rooms to host sessions and collaborate with others.
-        username: Your username is %{email}.
-        verify: To verify your account, just click the button below.
-        verify_text: 'To verify your account, just follow this link: %{url}'
-        verify_link: Verify Account
-        thanks: Thanks for joining and have a great day!
+        welcome: "Bienvenido a tu espacio personal %{name}"
+        success: "Haciendo uso de %{bigbluebutton}, puedes crear tus propias salas para sostener reuniones y colaborar con otros."
+        username: "Tu nombre de usuario es %{email}"
+        verify: "Para verificar la cuenta, haz click en el botón que aparece abajo."
+        verify_text: 'Utiliza este enlace para verificar tu cuenta: %{url}'
+        verify_link: Verificar la cuenta de usuario
+        thanks: Gracias por ingresar!
   maintenance:
-    window_alert: Maintenance window scheduled for %{date}
-  max_concurrent: The maximum number of concurrent sessions allowed has been reached!
-  merged: Merged
+    window_alert: "Ventana de mantenimiento agendada para %{date}"
+  max_concurrent: Se a alcanzado el número máximo de sesiones permitidas
+  merged: Combinado
   modal:
     create_role:
-      create: Create a new Role
-      footer_text: You can edit the individual permissions for this role after you've created it
-      name_placeholder: Enter a role name...
-      not_blank: Role name cannot be blank.
-      title: Create New Role
+      create: Crear un rol nuevo
+      footer_text: Puedes modificar los permisos para este rol de manera individual una vez que haya sido creado
+      name_placeholder: Introduce el nombre del rol
+      not_blank: El nombre de rol no pude estar vacío
+      title: Crear un rol nuevo
     create_room:
-      access_code: Access Code
-      access_code_placeholder: Generate an optional room access code
-      auto_join: Automatically join me into the room
-      create: Create Room
-      free_delete: You will be free to delete this room at any time.
-      name_placeholder: Enter a room name...
-      not_blank: Room name cannot be blank.
-      title: Create New Room
+      access_code: Código de acceso
+      access_code_placeholder: Generar un nuevo código de acceso
+      auto_join: Envíame a la sala automáticamente cuando empiece ls sesión
+      create: Crear sala
+      free_delete: Podrás eliminar la sala en el momento que quieras
+      name_placeholder: Introduce un nombre para la sala
+      not_blank: El nombre de la sala no puede estar vacío
+      title: Crear una sala nueva
     delete_account:
-      confirm: Are you sure you want to delete this account?
-      delete: I'm sure, delete this account.
-      keep: Actually, I'll keep it.
-      delete_warning: This will deactivate the user's account. All deactived users can be found under the deleted tab.
-      warning: This decision is final. You will <b>not</b> be able to recover associated data.
+      confirm: "¿Estas seguro de querer eliminar esta cuenta de usuario?"
+      delete: Estoy seguro de eliminar ésta cuenta
+      keep: "De hecho, la conservaré"
+      delete_warning: Esta acción desactivará la cuenta de usuario. Todos los usuarios desactivados pueden verse en la pestaña de eliminados.
+      warning: "Esta decisión es final, <b>No</b> podrás recuperar la información asociada"
     delete_room:
-      confirm: Are you sure you want to delete %{room}?
-      delete: I'm sure, delete this room.
-      keep: On second thought, I'll keep it.
-      warning: You will <b>not</b> be able to recover this room
-      recording_warning: or any of its %{recordings_num} associated recordings.
+      confirm: "¿Estás seguro de querer eliminar %{room}?"
+      delete: "Estoy seguro, elimina esta sala"
+      keep: "Cambie de opinión, la conservaré"
+      warning: <b>No</b> podrás recuperar esta sala
+      recording_warning: "o cualquiera de sus %{recordings_num} grabaciones asociadas."
     invite_user:
-      email_placeholder: Enter the users' emails (seperated by commas)
-      footer: The user will receive an email with instructions on how to sign up
-      send: Send Invite
-      title: Invite User
+      email_placeholder: Introduce los emails de usuarios (separados por comas)
+      footer: El usuario recibirá un email con instrucciones de como registrarse
+      send: Enviar invitación
+      title: Invitar usuario
     login:
-      or: or
-      with: Sign in with %{provider}
-      forgot_password: Forgot Password?
+      or: o
+      with: "Ingresar con %{provider}"
+      forgot_password: "Olvidaste tu contraseña?"
     rename_recording:
     remove_shared:
-      title: Are you sure you want to remove this room from your room list?
-      delete: I'm sure, remove this room.
-      warning: You will <b>not</b> be able to access this room anymore.
+      title: "¿Estás seguro de querer eliminar esta sala de la lista?"
+      delete: Estoy seguro de eliminar ésta sala.
+      warning: <b>No</b> podrás acceder a esta sala nunca más.
     room_settings:
-      title: Room Settings
-      update: Update Room
-      client: Select client type
-      join_moderator: All users join as moderators
-      mute: Mute users when they join
-      require_approval: Require moderator approval before joining
-      start: Allow any user to start this meeting
-      footer_text: Adjustment to your room can be done at anytime.
+      title: Configuración de la sala
+      update: Actualizar la sala
+      client: Seleccionar el tipo de cliente
+      join_moderator: Todos los usuarios ingresan como moderadores
+      mute: Deshabilitar micrófono de usuarios al entrar
+      require_approval: Requerir aprobación del moderador antes de ingresar a la sesión
+      start: Permitir usuarios iniciar esta sesión
+      footer_text: Puedes hacer cambios a tu sala en cualquier momento
     rename_room:
-      name_placeholder: Enter a new room name...
+      name_placeholder: Introduce un nuevo nombre para la sala...
     share_access:
-      footer: Sharing a room with a user allows them to start the room and view the room's recordings
-      list: Shared With
-      title: Share Room Access
-      save: Save Changes
-      cancel_changes: Cancel Changes
-      select: Select User
+      footer: Compartir una sala con un usuario le permite iniciar la sesión y ver las grabaciones.
+      list: Compartir con
+      title: Compartir acceso a salas
+      save: Guardar cambios
+      cancel_changes: Cancelar cambios
+      select: Seleccionar usuario
     merge_user:
-      cancel: Cancel
-      from: Account to be Merged
-      title: Merge User Accounts
-      to: Primary Account
-      save: Merge
-      footer: The rooms of the account to be merged will be transfered over to the Primary Account's room list and then the account will be deleted.
-  name_update_success: Room name successfully changed!
-  no_user_email_exists: There is no existing user with the email specified. Please make sure you typed it correctly.
-  omniauth_error: An error occured while authenticating with omniauth. Please try again or contact an administrator!
-  omniauth_specific_error: "%{error} occured while authenticating with omniauth. Please try again or contact an administrator!"
+      cancel: Cancelar
+      from: Cuenta de usuario a combinar
+      title: Combinar cuentas de usuario
+      to: Cuenta principal de usuario
+      save: Combinar
+      footer: Las salas de la cuenta a combinar será tranferida a la lista de salas de la cuenta de usuario principal y después eliminada.
+  name_update_success: El nombre de la sala ha sido actualizado exitosamente
+  no_user_email_exists: "No hay ningún usuario existente con el correo electrónico especificado. Por favor, asegúrese de que lo escribió correctamente."
+  omniauth_error: Ocurrió un error al intentar ingresar utilizando OmniAuth. Por favor intente nuevamente o contacte un administrador.
+  omniauth_specific_error: "Error %{error} al intentar ingresar utilizando omniauth. Por favor intente nuevamente o contacte un administrador."
   pagy:
     nav:
-      prev: "&lsaquo; Prev"
-      next: "Next &rsaquo;"
+      prev: "&lsaquo; Anterior"
+      next: "Siguiente &rsaquo;"
       gap: "&hellip;"
-  password: Password
-  password_empty_notice: Password cannot be empty.
-  password_reset_success: Password has been reset.
-  password_different_notice: Password Confirmation does not match.
+  password: Contraseña
+  password_empty_notice: La contraseña no puede estar vacía
+  password_reset_success: La contraseña ha sido cambiada
+  password_different_notice: La confirmación de password no coincide
   provider:
     google: Google
     office365: Office 365
@@ -426,150 +410,149 @@ en:
     ldap: LDAP
   recaptcha:
     errors:
-      recaptcha_unreachable: Oops, we failed to validate your reCAPTCHA response. Please try again.
-      verification_failed: reCAPTCHA verification failed, please try again.
+      recaptcha_unreachable: Oh no! La respuesta de tu reCAPTCHA falló. Intentalo de nuevo.
+      verification_failed: "La verificación reCAPTCHA ha falado, intentalo nuevamente."
   recording:
-    all_recordings: All Recordings
-    email: Email Recording
-    error: There was an error retrieving %{count} recording(s)
-    no_recordings: This room has no %{inject}recordings.
-    no_user_recordings: You currently have no recordings.
-    no_matched_recordings: No %{inject} recordings match your search.
-    recorded_on: Recorded on %{date}
+    all_recordings: Todas las grabaciones
+    email: Enviar correo electrónico con la grabación
+    error: "Ocurrió un error al recuperar %{count} grabación(es)."
+    no_recordings: "Esta sala no tiene grabaciones %{inject}"
+    no_user_recordings: No tienes grabaciones
+    no_matched_recordings: "No hay %{inject} grabaciones que coincidan con tu busqueda."
+    recorded_on: "Grabada el %{date}"
     table:
-      name: Name
-      thumbnails: Thumbnails
-      length: Length
-      users: Users
-      visibility: Visibility
-      formats: Formats
+      name: Nombre
+      thumbnails: Imagenes miniatura
+      length: Longitud
+      users: Usuarios
+      visibility: Visibilidad
+      formats: Formatos
     visibility:
-      public: Public
-      unlisted: Unlisted
+      public: Pública
+      unlisted: No listada
     format:
-      notes: Notes
+      notes: Notas
       podcast: Podcast
-      presentation: Presentation
-      statistics: Statistics
+      presentation: Presentación
+      statistics: Estadísticas
       video: Video
   registration:
     approval:
-      fail: Your account has not been approved yet. If multiples days have passed since you signed up, please contact your administrator.
-      signup: Your account was successfully created. It has been sent to an administrator for approval.
+      fail: "Tú cuenta de usuario todavía no ha sido autorizada. Si han pasado varios días desde tú registro, te sugerimos contactar al administrador."
+      signup: Tú cuenta de usuario ha sido creada y se le ha enviado una notificación al administrador para su autorización.
     banned:
-      fail: You do not have access to this application. If you believe this is a mistake, please contact your administrator. 
+      fail: "No tienes acceso a esta aplicación. Sí tu crees que este es un error, contacta al administrador del sistema." 
     deprecated:
-      new_signin: Select a new login method for you account. All your rooms from your old account will be migrated to the new account
-      twitter_signin: Signing in via Twitter has been deprecated and will be removed in the next release. Click <a href="%{link}"> here </a> to move your account to a new authentication method
-      twitter_signup: Sign up via Twitter has been deprecated. Please use a different sign up method
-      merge_success: Successfully merged your twitter account with your new account. Your old twitter account has been deleted
+      new_signin: "Selecciona un nuevo método de autenticación. Todas las salas vinculadas a tu cuenta anterior serán migradas a la cuenta nueva "
+      twitter_signin: "El ingreso a través de Twitter es obsoleto y sera eliminado en la siguiente versión. Haz click <a href=\"%{link}\"> aquí </a> para mover tu cuenta de usuario y su contenido a una cuenta ligada a otro método de autenticación"
+      twitter_signup: El registro de nuevas cuentas con Twitter es obsoleto. Por favor utiliza un método de autenticación diferente para registrarte.
+      merge_success: Tu cuenta vinculada a Twitter se fusionó correctamente con tu cuenta nueva. La cuenta vinculada con Twitter ha sido eliminada.
     invite:
-      fail: Your token is either invalid or has expired. If you believe this is a mistake, please contact your administrator.
-      no_invite: You do not have an invitation to join. Please contact your administrator to receive one.
-  remove: Remove
-  rename: Rename
+      fail: "Tu código ha expirado o es invalido. Sí tu crees que este es un error, contacta al administrador del sistema."
+      no_invite: No tienes una invitación para ingresar. Contacta al administrador del sistema para obtener una.
+  remove: Eliminar
+  rename: Cambiar nombre
   reset_password:
-    subtitle: Reset Password
-    password: New Password
-    confirm: New Password Confirmation
-    update: Update Password
-    auth_change: The authentication method has changed. Please check your email to set your password.
+    subtitle: Reiniciar contraseña
+    password: Nueva contraseña
+    confirm: Confirmación de nueva contraseña
+    update: Actualizar contraseña
+    auth_change: El metodo de autentificación ha cambiado. Por favor revisa tu correo electrónico para cambiar la contraseña.
   roles:
-    active: Active
+    active: Activos
     admin: Admin
-    banned: Banned
-    deleted: Deleted
-    pending: Pending
-    user: User
+    banned: Bloqueado
+    deleted: Eliminados
+    pending: Pendiente
+    user: Usuario
   room:
-    access_code_required: Please enter a valid access code to join the room
-    create_room: Create a Room
-    create_room_error: There was an error creating the room
-    create_room_success: Room created successfully
+    access_code_required: Introduce un código de acceso valido para ingresar a la sala
+    create_room: Crear una sala
+    create_room_error: Ocurrió un error al crear la sala
+    create_room_success: La sala fue creada exitosamente
     delete:
-      home_room: Can't delete user's Home Room
-      success: Room deleted successfully
-      fail: Failed to delete room (%{error})
-    enter_the_access_code: Enter the room's access code
-    invalid_provider: You have entered an invalid url. Please check the url and try again.
-    invited: You have been invited to join
-    invite_participants: Invite Participants
-    join: Join
-    last_session: Last session on %{session}
-    login: Enter
-    owner: Owner
-    owner_banned: This room is currently unavailable
+      home_room: La sala principal no puede ser eliminada
+      success: La sala fue eliminada exitosamente
+      fail: "La sala no pudo ser eliminada (%{error})"
+    enter_the_access_code: Introduce el código de acceso de la sala
+    invalid_provider: La URL introducida es invalida. Revísala e inténtalo de nuevo.
+    invited: Hás sido invitado a ingresar
+    invite_participants: Invitar participantes
+    join: Entrar
+    last_session: "Última sesión en %{session}"
+    login: Entrar
+    owner: Dueño
+    owner_banned: Esta sala no está disponible actualmente
     no_room:
-      description: Enter the room url or the room id for the room you want to join.
-      edit_profile: Edit User Profile
-      go_to: Go to the Room
-      invalid_room_uid: The room url/uid you entered was invalid.
-      placeholder: Room url/uid
-      no_recent_rooms: You don't have any recently joined rooms
-      recent_rooms: Go To a Recently Joined Room
-      title: Join a Room
-    no_sessions: This room has no sessions, yet!
-    recordings: Room Recordings
-    room_limit: You have reached the maximum number of rooms allowed
-    room_limit_exceeded: You have exceeded the number of rooms allowed. Please delete %{difference} room(s) to access this room.
-    sessions: Sessions
-    settings: Room Settings
-    share: Manage Access
-    shared_by: Shared by %{email}
-    remove_shared_access_success: Successfully removed shared room from your room list
-    remove_shared_access_error: There was an error removing the shared room from your list
-    shared_access_success: Room shared successfully
-    shared_access_error: There was an error sharing the room
-    start: Start
-    unavailable: This room is currently unavailable due to the owner's email not being verified.
-    update_settings_error: There was an error updating the room settings
-    update_settings_success: Room settings successfully updated
+      description: Ingresa la url o id de la sala a la que quieres acceder
+      edit_profile: Editar perfil de usuario
+      go_to: Ir a sala
+      invalid_room_uid: La url o uid ingresado es invalido
+      placeholder: url-uid de la sala
+      no_recent_rooms: No has utilizado ninguna sala recientemente
+      recent_rooms: Ve a Salas utilizadas recientemente
+      title: Ingresar a sala
+    no_sessions: Esta sala todavía no tiene sesiones
+    recordings: Grabaciones de sala
+    room_limit: Haz alcanzado el número límite de salas permitidas
+    room_limit_exceeded: "Haz alcanzado el número límite de salas permitidas. Por favor elimina %{difference} sala(s) para poder acceder a ésta."
+    sessions: Sesiones
+    settings: Configuración de sala
+    share: Administrar el acceso
+    shared_by: "Compartida con %{email}"
+    remove_shared_access_success: La sala compartida fue exitosamente eliminada de la lista
+    remove_shared_access_error: Ocurrió un error al eliminar la sala compartida de la lista
+    shared_access_success: La sala fue compartida exitosamente
+    shared_access_error: Ocurrió un error al compartir la sala
+    start: Iniciar
+    unavailable: Esta sala no se encuentra disponible debido a que la cuenta de correo  de su propietario no ha sido verificado.
+    update_settings_error: Ocurrió un error al actualizar la configuración de la sala
+    update_settings_success: La configuración de la sala fue actualizada exitosamente
     wait:
-      message: The meeting hasn't started yet.
-      auto: You will automatically join when the meeting starts.
+      message: La sesión todavía no ha comenzado.
+      auto: Serás enviado a la sala automáticamente cuando empiece ls sesión
   settings:
     account:
-      fullname: Full name
-      language: Language
-      provider: Provider
-      image: Image
-      image_url: Profile Image URL
-      roles: User Roles
-      subtitle: Update your Account Info
-      title: Account Info
+      fullname: Nombre completo
+      language: Idioma
+      provider: Proveedor
+      image: Imagen
+      image_url: "Enlace a imagén de perfil "
+      roles: Roles de usuario
+      subtitle: Actualizar información de usuario
+      title: Información de la cuenta
     delete:
-      button: Yes, I would like to delete my account.
-      disclaimer: If you choose to delete your account, it will <b>NOT</b> be recoverable. All information regarding your account, including settings, rooms, and recording will be removed.
-      subtitle: Permanently Delete your Account
-      title: Delete Account
+      button: "Si, me gustaría eleiminar mi cuenta de usuario."
+      disclaimer: "Sí elijes eliminar tu cuenta de usuario, <b>NO</b> podrá ser recuperada. Toda la información relacionada con tu cuenta, incluyendo configuración, salas y grabaciones, será eliminada."
+      subtitle: Eliminar la cuenta de forma permanente
+      title: Eliminar cuenta
     password:
-      confirmation: New Password Confirmation
-      new: New Password
-      old: Old Password
-      subtitle: Change your Password
-      title: Password
-    title: Profile
-    search: Search
+      confirmation: Confirmación de contraseña nueva
+      new: Contraseña nueva
+      old: Contraseña anterior
+      subtitle: Cambiar tu contraseña
+      title: Contraseña
+    title: Perfil de usuario
+    search: Buscar
   signup:
-    password_confirm: Password Confirmation
-    subtitle: Create an Account
-    title: Sign up
-    with: Sign up with %{provider}
+    password_confirm: Confirmación de contraseña
+    subtitle: Crear una cuenta
+    title: Registrarse
+    with: "Registrarse utilizando %{provider}"
   terms:
-    accept: I accept the %{href}
-    accept_existing: I accept the terms and conditions
-    title: Terms and Conditions
+    accept: Accepto los términos y condiciones
+    accept_existing: Acepto los términos y condiciones
+    title: Términos y condiciones
   test_install: >
-    This deployment is using a pre-configured testing server, you should replace this with your own.
-    For details, see the %{href}.
-  update: Update
+    Esta instalación esta haciendo uso del servidor para pruebas que viene pre-configurado. Debería ser substituido con tu propio servidor. Para más detalles vea %{href}.
+  update: Actualizar
   verify:
-    accept: Verify
-    activated: Account verified!
-    already_verified: Account has already been verified
-    invalid: Invalid verification link
-    not_verified: Your account has not been verified yet.
-    resend: Resend verification email
-    signin: Please sign in to access your account.
-    title: Verify your email
-    verification: Verification
+    accept: Verificar
+    activated: Cuenta de correo verificada.
+    already_verified: Cuenta de correo verificada con anterioridad
+    invalid: Enlace de verificación invalido
+    not_verified: Tu cuenta de correo no ha sido verificada
+    resend: Reenviar enlace para verificación de cuenta de correo
+    signin: "Ingresa para tener acceso a la información de tu cuenta "
+    title: Verificar tu cuenta de correo
+    verification: Verificación
